@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Verificación de Texto</title>
+    <title>Prueba 2 Infantil</title>
   </head>
   <body>
-    <h1>Verificación de Texto</h1>
+    <h1>PRUEBA 2 INFANTIL</h1>
+    <img src="img/inf_2.jpg" alt="Imagen prueba 2">
     <form>
-      <label for="texto">Introduce el texto:</label>
+      <label for="texto">¿Qué come La pequeña oruga glotona el domingo?</label>
       <input type="text" id="texto" name="texto"><br><br>
       <button type="button" onclick="verificarTexto()">Verificar</button>
     </form>
@@ -14,13 +15,13 @@
     <script>
       function verificarTexto() {
         const textoIngresado = document.getElementById("texto").value;
-        const textoCorrecto = "hola"; // Aquí puedes cambiar el valor a tu gusto
+        const textoCorrecto = "HOJA VERDE"; // Aquí puedes cambiar el valor a tu gusto
 
         if (textoIngresado === textoCorrecto) {
           const mensaje = document.createElement("div");
           const imagen = document.createElement("img");
 
-          imagen.src = "https://via.placeholder.com/150"; // Aquí debes colocar la URL de tu imagen
+          imagen.src = "img/oruga.jepg" alt="Oruga Glotona"; // Aquí debes colocar la URL de tu imagen
 
           mensaje.textContent = "¡Te felicito! Esta es la letra que estás buscando: A";
           mensaje.appendChild(imagen);
