@@ -1,44 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Verificación de Texto</title>
+      <title>Prueba 7 Primaria 123</title>
+      <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
+      <script type="text/javascript" src="prueba7Primaria123.js"></script>
+     
+    </script>
   </head>
   <body>
-    <h1>Verificación de Texto</h1>
+    <h1>PRUEBA 7</h1>
     <form>
-      <label for="texto">Introduce el texto:</label>
-      <input type="text" id="texto" name="texto"><br><br>
-      <button type="button" onclick="verificarTexto()">Verificar</button>
+      <label for="texto">Los protagonistas del libro De mayor quiero ser feliz, tienen la misma edad y son hermanos...</label>
+      <br/>
+      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="8"><br><br>
+      <button type="button" onclick="verificarRespuestas()">Verificar </button>
     </form>
+      <div id="respuestas-correctas" style="display: none;">
+      <p>¡Te felicito! La letra que estás buscando es la: A</p>
+      <img id="imagen" src="img/mayor.jpeg" alt="De mayor">
+      </div>
 
-    <script>
-      function verificarTexto() {
-        const textoIngresado = document.getElementById("texto").value;
-        const textoCorrecto = "hola"; // Aquí puedes cambiar el valor a tu gusto
-
-        if (textoIngresado === textoCorrecto) {
-          const mensaje = document.createElement("div");
-          const imagen = document.createElement("img");
-
-          imagen.src = "https://via.placeholder.com/150"; // Aquí debes colocar la URL de tu imagen
-
-          mensaje.textContent = "¡Te felicito! Esta es la letra que estás buscando: A";
-          mensaje.appendChild(imagen);
-
-          alert({
-            content: mensaje,
-            buttons: {
-              ok: {
-                text: "Cerrar",
-                btnClass: "btn-blue",
-                action: function () {}
-              }
-            }
-          });
-        } else {
-          alert("Inténtalo de nuevo.");
-        }
-      }
-    </script>
+    
   </body>
 </html>
