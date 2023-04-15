@@ -1,44 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Verificación de Texto</title>
+      <title>Prueba 9 Infantil</title>
+      <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
+      <script type="text/javascript" src="prueba9Infantil.js"></script>
+     
+    </script>
   </head>
   <body>
-    <h1>Verificación de Texto</h1>
+    <h1>PRUEBA 9 INFANTIL</h1>
     <form>
-      <label for="texto">Introduce el texto:</label>
-      <input type="text" id="texto" name="texto"><br><br>
-      <button type="button" onclick="verificarTexto()">Verificar</button>
+      <label for="texto">¿Cómo brilla la alegría en el libro El monstruo de colores?</label>
+      <br/>
+      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="4"><label>  4 letras</label><br><br>
+      <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="2"><label>  2 letras</label><br><br>
+      <input type="text" id="respuesta3" name="respuesta3" value="" maxlength="3"><label>  3 letras</label><br><br>
+      
+      <button type="button" onclick="verificarRespuestas()">Verificar </button>
     </form>
+      <div id="respuestas-correctas" style="display: none;">
+      <p>¡Te felicito! La letra que estás buscando es la: O</p>
+      <img id="imagen" src="img/monstruo.jpeg" alt="Monstruo">
+      </div>
 
-    <script>
-      function verificarTexto() {
-        const textoIngresado = document.getElementById("texto").value;
-        const textoCorrecto = "hola"; // Aquí puedes cambiar el valor a tu gusto
-
-        if (textoIngresado === textoCorrecto) {
-          const mensaje = document.createElement("div");
-          const imagen = document.createElement("img");
-
-          imagen.src = "https://via.placeholder.com/150"; // Aquí debes colocar la URL de tu imagen
-
-          mensaje.textContent = "¡Te felicito! Esta es la letra que estás buscando: A";
-          mensaje.appendChild(imagen);
-
-          alert({
-            content: mensaje,
-            buttons: {
-              ok: {
-                text: "Cerrar",
-                btnClass: "btn-blue",
-                action: function () {}
-              }
-            }
-          });
-        } else {
-          alert("Inténtalo de nuevo.");
-        }
-      }
-    </script>
+    
   </body>
 </html>
