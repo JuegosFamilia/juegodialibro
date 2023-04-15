@@ -12,11 +12,13 @@
     <img src="img/inf_2.jpg" alt="Imagen prueba 2">
     <form>
       <label for="texto">¿Qué come La pequeña oruga glotona el domingo?</label>
-      <input type="text" id="texto" name="texto"><br><br>
-      <button type="button" onclick="verificarTexto()">Verificar</button>
+      <p>Dos palabras:</p>
+      <br/>
+      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="4"><br><br>
+      <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="5"><br><br>
+      <button type="button" onclick="verificarRespuestas()">Verificar </button>
     </form>
-
-      <div id="respuesta-correcta" style="display: none;">
+      <div id="respuestas-correctas" style="display: none;">
       <p>¡Te felicito! La letra que estás buscando es la: A</p>
       <img id="imagen" src="img/oruga.jpeg" alt="Oruga">
       </div>

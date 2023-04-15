@@ -3,41 +3,26 @@
   <head>
       <title>Prueba 6 Infantil</title>
        <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
+       <script type="text/javascript" src="prueba6Infantil.js"></script>
   </head>
   <body>
     <h1>PRUEBA 6 INFANTIL</h1>
     <img src="img/inf_6.jpg" alt="Imagen prueba 2">
     <form>
-      <label for="respuesta1">Respuesta 1:</label>
-      <input type="text" id="respuesta1" name="respuesta1" value="hola"><br><br>
-      <label for="respuesta2">Respuesta 2:</label>
-      <input type="text" id="respuesta2" name="respuesta2" value="adios"><br><br>
-      <label for="respuesta3">Respuesta 3:</label>
-      <input type="text" id="respuesta3" name="respuesta3" value="buenos dias"><br><br>
-      <button type="button" onclick="verificarRespuestas()">Verificar</button>
+      <label for="texto">¿Qué come La pequeña oruga glotona el domingo?</label>
+      <p>5 palabras:</p>
+      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="3"><label>  3 letras</label><br><br>
+      <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="4"><label>  4 letras</label><br><br>
+      <input type="text" id="respuesta3" name="respuesta1" value="" maxlength="4"><label>  4 letras</label><br><br>
+      <input type="text" id="respuesta4" name="respuesta2" value="" maxlength="6"><label>  6 letras</label><br><br>
+      <input type="text" id="respuesta5" name="respuesta1" value="" maxlength="9"><label>  9 letras</label><br><br>
+      <button type="button" onclick="verificarRespuestas()">Verificar </button>
     </form>
-    
-
-      <div id="respuesta-correcta" style="display: none;">
-      <p>¡Te felicito! La letra que estás buscando es la: I</p>
+      <div id="respuestas-correctas" style="display: none;">
+      <p>¡Te felicito! La letra que estás buscando es la: O</p>
       <img id="imagen" src="img/lobo.jpeg" alt="Lobo">
       </div>
 
-    <script>
-      const respuestasCorrectas = ["hola", "adios", "buenos dias"]; // Aquí puedes agregar más respuestas correctas
-
-      function verificarRespuestas() {
-        const respuesta1 = document.getElementById("respuesta1").value.toLowerCase();
-        const respuesta2 = document.getElementById("respuesta2").value.toLowerCase();
-        const respuesta3 = document.getElementById("respuesta3").value.toLowerCase();
-
-        if (respuestasCorrectas.includes(respuesta1) && respuestasCorrectas.includes(respuesta2) && respuestasCorrectas.includes(respuesta3)) {
-          document.getElementById("respuestas-correctas").style.display = "block";
-          document.getElementById("imagen").src = "img/lobo.jpeg"; // Aquí debes colocar la URL de tu imagen
-        } else {
-          alert("Inténtalo de nuevo.");
-        }
-      }
-    </script>
+    
   </body>
 </html>
