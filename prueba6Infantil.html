@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Verificación de Texto</title>
+      <title>Prueba 6 Infantil</title>
+       <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
   </head>
   <body>
-    <h1>Verificación de Texto</h1>
+    <h1>PRUEBA 6 INFANTIL</h1>
+    <img src="img/inf_6.jpg" alt="Imagen prueba 2">
     <form>
-      <label for="texto">Introduce el texto:</label>
-      <input type="text" id="texto" name="texto"><br><br>
-      <button type="button" onclick="verificarTexto()">Verificar</button>
+      <label for="respuesta1">Respuesta 1:</label>
+      <input type="text" id="respuesta1" name="respuesta1" value="hola"><br><br>
+      <label for="respuesta2">Respuesta 2:</label>
+      <input type="text" id="respuesta2" name="respuesta2" value="adios"><br><br>
+      <label for="respuesta3">Respuesta 3:</label>
+      <input type="text" id="respuesta3" name="respuesta3" value="buenos dias"><br><br>
+      <button type="button" onclick="verificarRespuestas()">Verificar</button>
     </form>
+    
+
+      <div id="respuesta-correcta" style="display: none;">
+      <p>¡Te felicito! La letra que estás buscando es la: I</p>
+      <img id="imagen" src="img/lobo.jpeg" alt="Lobo">
+      </div>
 
     <script>
-      function verificarTexto() {
-        const textoIngresado = document.getElementById("texto").value;
-        const textoCorrecto = "hola"; // Aquí puedes cambiar el valor a tu gusto
+      const respuestasCorrectas = ["hola", "adios", "buenos dias"]; // Aquí puedes agregar más respuestas correctas
 
-        if (textoIngresado === textoCorrecto) {
-          const mensaje = document.createElement("div");
-          const imagen = document.createElement("img");
+      function verificarRespuestas() {
+        const respuesta1 = document.getElementById("respuesta1").value.toLowerCase();
+        const respuesta2 = document.getElementById("respuesta2").value.toLowerCase();
+        const respuesta3 = document.getElementById("respuesta3").value.toLowerCase();
 
-          imagen.src = "https://via.placeholder.com/150"; // Aquí debes colocar la URL de tu imagen
-
-          mensaje.textContent = "¡Te felicito! Esta es la letra que estás buscando: A";
-          mensaje.appendChild(imagen);
-
-          alert({
-            content: mensaje,
-            buttons: {
-              ok: {
-                text: "Cerrar",
-                btnClass: "btn-blue",
-                action: function () {}
-              }
-            }
-          });
+        if (respuestasCorrectas.includes(respuesta1) && respuestasCorrectas.includes(respuesta2) && respuestasCorrectas.includes(respuesta3)) {
+          document.getElementById("respuestas-correctas").style.display = "block";
+          document.getElementById("imagen").src = "img/lobo.jpeg"; // Aquí debes colocar la URL de tu imagen
         } else {
           alert("Inténtalo de nuevo.");
         }

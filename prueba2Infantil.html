@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Prueba 2 Infantil</title>
+      <title>Prueba 2 Infantil</title>
+      <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
+      <script type="text/javascript" src="prueba2Infantil.js"></script>
+     
+    </script>
   </head>
   <body>
     <h1>PRUEBA 2 INFANTIL</h1>
@@ -12,34 +16,11 @@
       <button type="button" onclick="verificarTexto()">Verificar</button>
     </form>
 
-    <script>
-      function verificarTexto() {
-        const textoIngresado = document.getElementById("texto").value;
-        const textoCorrecto = "HOJA VERDE"; // Aquí puedes cambiar el valor a tu gusto
+      <div id="respuesta-correcta" style="display: none;">
+      <p>¡Te felicito! La letra que estás buscando es la: A</p>
+      <img id="imagen" src="img/oruga.jpeg" alt="Oruga">
+      </div>
 
-        if (textoIngresado === textoCorrecto) {
-          const mensaje = document.createElement("div");
-          const imagen = document.createElement("img");
-
-          imagen.src = "img/oruga.jepg" alt="Oruga Glotona"; // Aquí debes colocar la URL de tu imagen
-
-          mensaje.textContent = "¡Te felicito! Esta es la letra que estás buscando: A";
-          mensaje.appendChild(imagen);
-
-          alert({
-            content: mensaje,
-            buttons: {
-              ok: {
-                text: "Cerrar",
-                btnClass: "btn-blue",
-                action: function () {}
-              }
-            }
-          });
-        } else {
-          alert("Inténtalo de nuevo.");
-        }
-      }
-    </script>
+    
   </body>
 </html>
