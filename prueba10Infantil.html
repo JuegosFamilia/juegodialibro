@@ -1,44 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Verificación de Texto</title>
+      <title>Prueba 10 Infantil</title>
+      <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
+      <script type="text/javascript" src="prueba10Infantil.js"></script>
+     
+    </script>
   </head>
   <body>
-    <h1>Verificación de Texto</h1>
+    <h1>PRUEBA 10 INFANTIL</h1>
     <form>
-      <label for="texto">Introduce el texto:</label>
-      <input type="text" id="texto" name="texto"><br><br>
-      <button type="button" onclick="verificarTexto()">Verificar</button>
+      <label for="texto">¿Qué colores pone a su gato Wilbur en el libro La bruja Winnie?</label>
+      <br/>
+      <p>Cinco colores:</p>
+      <br/>
+      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="4"><label>  4 letras</label><br><br>
+      <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="8"><label>  8 letras</label><br><br>
+      <input type="text" id="respuesta3" name="respuesta3" value="" maxlength="4"><label>  4 letras</label><br><br>
+      <input type="text" id="respuesta4" name="respuesta4" value="" maxlength="4"><label>  4 letras</label><br><br>
+      <input type="text" id="respuesta5" name="respuesta5" value="" maxlength="6"><label>  6 letras</label><br><br>
+      <button type="button" onclick="verificarRespuestas()">Verificar </button>
     </form>
+      <div id="respuestas-correctas" style="display: none;">
+      <p>¡Te felicito! La letra que estás buscando es la: O</p>
+      <img id="imagen" src="img/winnie.jpeg" alt="Bruja">
+      </div>
 
-    <script>
-      function verificarTexto() {
-        const textoIngresado = document.getElementById("texto").value;
-        const textoCorrecto = "hola"; // Aquí puedes cambiar el valor a tu gusto
-
-        if (textoIngresado === textoCorrecto) {
-          const mensaje = document.createElement("div");
-          const imagen = document.createElement("img");
-
-          imagen.src = "https://via.placeholder.com/150"; // Aquí debes colocar la URL de tu imagen
-
-          mensaje.textContent = "¡Te felicito! Esta es la letra que estás buscando: A";
-          mensaje.appendChild(imagen);
-
-          alert({
-            content: mensaje,
-            buttons: {
-              ok: {
-                text: "Cerrar",
-                btnClass: "btn-blue",
-                action: function () {}
-              }
-            }
-          });
-        } else {
-          alert("Inténtalo de nuevo.");
-        }
-      }
-    </script>
+      <button type="button" onclick="pistas()">Pista </button>
+      <div id="pistasimagenes" style="display: none;">
+        <img src="img/wilburg.png">
+      </div>
   </body>
 </html>
