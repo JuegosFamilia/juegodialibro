@@ -10,3 +10,12 @@ const verificarRespuestas = () => {
     alert("Inténtalo de nuevo.");
   }
 }
+
+const pistas = () => {
+  let imagenes = document.getElementById("pistasimagenes");
+    if (imagenes.style.display === "none") {
+       imagenes.style.display = "block";
+    } else {
+      imagenes.style.display = "none";
+    }
+}
