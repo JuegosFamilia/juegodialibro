@@ -4,23 +4,33 @@
       <title>Prueba 5 Primaria 123</title>
       <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
       <script type="text/javascript" src="prueba5Primaria123.js"></script>
-     
-    </script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>PRUEBA 5</h1>
-    <img src="img/prim123_5.jpg" alt="Imagen prueba 5">
-    <form>
-      <label for="texto">Cómo se llama el lugar donde vive la niña protagonista de la colección Ana Kadabra? </label>
-      <br/>
-      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="9"><br><br>
-      <button type="button" onclick="verificarRespuestas()">Verificar </button>
-    </form>
+     <div class="container">
+      <h1>PRUEBA 5</h1>
+     <div class="abs-center">
+       <img src="img/prim123_5.jpg" alt="Imagen prueba 5">
+     </div>
+     <div class="abs-center">
+        <form>
+           <div class="form-control">
+           <label for="texto">Cómo se llama el lugar donde vive la niña protagonista de la colección Anna Kadabra? </label>
+           <br/>
+           <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="9"><br><br>
+           <button class="btn btn-info" type="button" onclick="verificarRespuestas()">Verificar </button>
+ 
+     <div class="abs-center">
       <div id="respuestas-correctas" style="display: none;">
+         <br/>
       <h4>¡Te felicito! La letra que estás buscando es la: A</h4>
       <img id="imagen" src="img/anna.jpeg" alt="Anna">
       </div>
+    </div>
+  </div>
 
-    
   </body>
 </html>

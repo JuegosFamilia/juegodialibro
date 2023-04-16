@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Verificación de Texto</title>
+      <title>Prueba 5 Primaria 456</title>
+      <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
+      <script type="text/javascript" src="prueba5Primaria456.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>Verificación de Texto</h1>
+     <div class="container">
+    <h1>PRUEBA 5</h1>
+  </div>
+      <div class="abs-center">
+    <img src="img/prim456_5.JPG" alt="Imagen prueba 5">
+  </div>
+  <br/>
+     <div class="abs-center">
     <form>
-      <label for="texto">Introduce el texto:</label>
-      <input type="text" id="texto" name="texto"><br><br>
-      <button type="button" onclick="verificarTexto()">Verificar</button>
+       <div class="form-control">
+      <label for="texto">¿Qué tipo de seres son los padres de Isidora Moon?</label>
+      <br/>
+      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="8"><label>&nbsp;&nbsp;&nbsp;&nbsp;8 letras</label><br><br>
+      <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="4"><label>&nbsp;&nbsp;&nbsp;&nbsp;4 letras</label><br><br>
+      <button class="btn btn-info" type="button" onclick="verificarRespuestas()">Verificar </button>
     </form>
-
-    <script>
-      function verificarTexto() {
-        const textoIngresado = document.getElementById("texto").value;
-        const textoCorrecto = "hola"; // Aquí puedes cambiar el valor a tu gusto
-
-        if (textoIngresado === textoCorrecto) {
-          const mensaje = document.createElement("div");
-          const imagen = document.createElement("img");
-
-          imagen.src = "https://via.placeholder.com/150"; // Aquí debes colocar la URL de tu imagen
-
-          mensaje.textContent = "¡Te felicito! Esta es la letra que estás buscando: A";
-          mensaje.appendChild(imagen);
-
-          alert({
-            content: mensaje,
-            buttons: {
-              ok: {
-                text: "Cerrar",
-                btnClass: "btn-blue",
-                action: function () {}
-              }
-            }
-          });
-        } else {
-          alert("Inténtalo de nuevo.");
-        }
-      }
-    </script>
+     <div class="abs-center">
+      <div id="respuestas-correctas" style="display: none;">
+      <h4>¡Te felicito! La letra que estás buscando es la: A</h4>
+      <img id="imagen" src="img/isadora.jpeg" alt="Isadora">
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+    
   </body>
 </html>
