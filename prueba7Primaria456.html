@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Verificación de Texto</title>
+      <title>Prueba 7 Primaria 456</title>
+      <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
+      <script type="text/javascript" src="prueba7Primaria456.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>Verificación de Texto</h1>
-    <form>
-      <label for="texto">Introduce el texto:</label>
-      <input type="text" id="texto" name="texto"><br><br>
-      <button type="button" onclick="verificarTexto()">Verificar</button>
-    </form>
+     <div class="container">
+      <h1>PRUEBA 7</h1>
+     <div class="abs-center">
+       <img src="img/prim456_7.png" alt="Imagen prueba 7">
+     </div>
+     <div class="abs-center">
+       <p>El primer número te da la posición horizontal, el segundo la vertical. Por ejemplo 23 es la letra M.</p>
+       <br/>
+     </div>
+       <div class="abs-center">
+       <p>En estas coordenadas tienes las dos palabras de la respuesta.</p>
+     </div>
+      <div class="abs-center">
+       <p>11, 23, 42, 34, 44, 41</p>
+     </div>
+     <div class="abs-center">
+       <p>11, 23, 43, 24</p>
+     </div>
+     </div>
+     <div class="abs-center">
+        <form>
+           <div class="form-control">
+           <label for="texto">El zorro es uno de los personajes que aparecen en el libro <b>El principito</b>, ¿Qué representa?</b></label>
+           <br/>
+           <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="7"><label>&nbsp;&nbsp;&nbsp;&nbsp;7 letras</label><br><br>
+           <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="4"><label>&nbsp;&nbsp;&nbsp;&nbsp;4 letras</label><br><br>
+           <button class="btn btn-info" type="button" onclick="verificarRespuestas()">Verificar </button>
+ 
+     <div class="abs-center">
+      <div id="respuestas-correctas" style="display: none;">
+         <br/>
+      <h4>¡Te felicito! La letra que estás buscando es la: A</h4>
+      <img id="imagen" src="img/principito.jpeg" alt="Principito">
+      </div>
+    </div>
+  </div>
 
-    <script>
-      function verificarTexto() {
-        const textoIngresado = document.getElementById("texto").value;
-        const textoCorrecto = "hola"; // Aquí puedes cambiar el valor a tu gusto
-
-        if (textoIngresado === textoCorrecto) {
-          const mensaje = document.createElement("div");
-          const imagen = document.createElement("img");
-
-          imagen.src = "https://via.placeholder.com/150"; // Aquí debes colocar la URL de tu imagen
-
-          mensaje.textContent = "¡Te felicito! Esta es la letra que estás buscando: A";
-          mensaje.appendChild(imagen);
-
-          alert({
-            content: mensaje,
-            buttons: {
-              ok: {
-                text: "Cerrar",
-                btnClass: "btn-blue",
-                action: function () {}
-              }
-            }
-          });
-        } else {
-          alert("Inténtalo de nuevo.");
-        }
-      }
-    </script>
   </body>
 </html>
