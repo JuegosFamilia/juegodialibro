@@ -13,9 +13,12 @@
   <body>
  
     <div class="container">
-      <h1>PRUEBA 1</h1>
+      <h1>Prueba 1</h1>
       <div class="abs-center">
       <img src="img/prim456_1.jpg" alt="Imagen prueba 1">
+      </div>
+      <div class="abs-center">
+      Código Morse
       </div>
       <br/>
       <div class="abs-center">
@@ -23,13 +26,21 @@
         <div class="form-control">
         <label for="texto">¿Cómo se llama el mejor amigo de Greg en el libro El diario de Greg?</label>
         <br/>
-        <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="6"><label>&nbsp;&nbsp;&nbsp;&nbsp;6 letras</label><br><br>
+        <p>La respuesta la tenéis que completar en código morse</p>
+        <p> (una letra en cada campo hasta completar el nombre):</p>
+        <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="3"><label>&nbsp;&nbsp;&nbsp;&nbsp;3 caracteres</label><br><br>
+        <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="3"><label>&nbsp;&nbsp;&nbsp;&nbsp;3 caracteres</label><br><br>
+        <input type="text" id="respuesta3" name="respuesta3" value="" maxlength="3"><label>&nbsp;&nbsp;&nbsp;&nbsp;3 caracteres</label><br><br>
+        <input type="text" id="respuesta4" name="respuesta4" value="" maxlength="4"><label>&nbsp;&nbsp;&nbsp;&nbsp;4 caracteres</label><br><br>
+        <input type="text" id="respuesta5" name="respuesta5" value="" maxlength="1"><label>&nbsp;&nbsp;&nbsp;&nbsp;1 caracter</label><br><br>
+        <input type="text" id="respuesta6" name="respuesta6" value="" maxlength="4"><label>&nbsp;&nbsp;&nbsp;&nbsp;4 caracteres</label><br><br>
         <button class="btn btn-info" type="button" onclick="verificarRespuestas()">Verificar </button>
         </div>
       </form>
       </div>
     <div class="abs-center">
       <div id="respuestas-correctas" style="display: none;">
+        <br/>
       <h4>¡Te felicito! La letra que estás buscando es la: O</h4>
       <img id="imagen" src="img/greg.jpeg" alt="Geronimo">
       </div>

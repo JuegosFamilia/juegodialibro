@@ -4,23 +4,35 @@
       <title>Prueba 2 Primaria 123</title>
       <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
       <script type="text/javascript" src="prueba2Primaria123.js"></script>
-     
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     </script>
   </head>
   <body>
-    <h1>PRUEBA 2</h1>
+     <div class="container">
+    <h1>Prueba 2</h1>
+  </div>
+   <div class="container">
     <form>
+       <div class="form-control">
       <label for="texto">¿Cómo se llama la protagonista del libro Yo mataré monstruos por ti?</label>
+      <p>De entre las letras del abecedario tienes que seleccionar las que ocupan las siguientes posiciones y ordenarlas para dar con el nombre.</p>
+      <p>Letras que corresponden a las posiciones 13,1,19,21,9,14,1</p>
+      <p>Siendo la A la que ocupa la posición 1 y la Z la posición 27.</p>
       <br/>
       <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="7"><br><br>
       
-      <button type="button" onclick="verificarRespuestas()">Verificar </button>
+      <button class="btn btn-info" type="button" onclick="verificarRespuestas()">Verificar </button>
     </form>
+  </div>
+  <div class="abs-center">
       <div id="respuestas-correctas" style="display: none;">
       <h4>¡Te felicito! La letra que estás buscando es la: O</h4>
       <img id="imagen" src="img/matare.jpeg" alt="Yo matare">
       </div>
-
-    
+</div>
+    </div>
   </body>
 </html>
