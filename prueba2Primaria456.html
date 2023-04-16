@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Verificación de Texto</title>
+      <title>Prueba 2 Primarias 456</title>
+      <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
+      <script type="text/javascript" src="prueba2Primaria456.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      </script>
   </head>
   <body>
-    <h1>Verificación de Texto</h1>
-    <form>
-      <label for="texto">Introduce el texto:</label>
-      <input type="text" id="texto" name="texto"><br><br>
-      <button type="button" onclick="verificarTexto()">Verificar</button>
-    </form>
-
-    <script>
-      function verificarTexto() {
-        const textoIngresado = document.getElementById("texto").value;
-        const textoCorrecto = "hola"; // Aquí puedes cambiar el valor a tu gusto
-
-        if (textoIngresado === textoCorrecto) {
-          const mensaje = document.createElement("div");
-          const imagen = document.createElement("img");
-
-          imagen.src = "https://via.placeholder.com/150"; // Aquí debes colocar la URL de tu imagen
-
-          mensaje.textContent = "¡Te felicito! Esta es la letra que estás buscando: A";
-          mensaje.appendChild(imagen);
-
-          alert({
-            content: mensaje,
-            buttons: {
-              ok: {
-                text: "Cerrar",
-                btnClass: "btn-blue",
-                action: function () {}
-              }
-            }
-          });
-        } else {
-          alert("Inténtalo de nuevo.");
-        }
-      }
-    </script>
+ 
+    <div class="container">
+      <h1>PRUEBA 2</h1>
+      <div class="abs-center">
+      </div>
+      <br/>
+      <div class="abs-center">
+      <form>
+        <div class="form-control">
+        <label for="texto">¿De qué palo de la baraja es el personaje de la reina en el libro de Alicia en el país de las maravillas?</label>
+        <br/>
+        <label>Su frase favorita es «¡Que le corten la cabeza!».</label>
+        <br/>
+        <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="9"><label><br><br>
+        <button class="btn btn-info" type="button" onclick="verificarRespuestas()">Verificar </button>
+        </div>
+      </form>
+      </div>
+    <div class="abs-center">
+      <div id="respuestas-correctas" style="display: none;">
+      <h4>¡Te felicito! La letra que estás buscando es la: O</h4>
+      <img id="imagen" src="img/alicia.jpeg" alt="Alicia">
+      <img id="imagen2" src="img/cartas.gif" alt="Cartas">
+      </div>
+    <div>
+    
   </body>
 </html>
