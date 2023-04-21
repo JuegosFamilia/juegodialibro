@@ -1,5 +1,5 @@
 
-  const respuestasCorrectas = ["MOONVILE"]; // Aquí puedes agregar más respuestas correctas
+  const respuestasCorrectas = ["MOONVILLE"]; // Aquí puedes agregar más respuestas correctas
     const verificarRespuestas = () => {
       const respuesta1 = document.getElementById("respuesta1").value.toUpperCase();
   

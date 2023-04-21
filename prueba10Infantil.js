@@ -1,4 +1,4 @@
-const respuestasCorrectas = ["ROJO", "AMARILLO", "ROSA", "AZUL", "MORADO"]; // Aquí puedes agregar más respuestas correctas
+const respuestasCorrectas = ["ROJO", "AMARILLO", "ROSA", "AZUL", "VIOLETA"]; // Aquí puedes agregar más respuestas correctas
     const verificarRespuestas = () => {
       const respuesta1 = document.getElementById("respuesta1").value.toUpperCase();
       const respuesta2 = document.getElementById("respuesta2").value.toUpperCase();
@@ -9,7 +9,7 @@ const respuestasCorrectas = ["ROJO", "AMARILLO", "ROSA", "AZUL", "MORADO"]; // A
 
       if (respuestasCorrectas.includes(respuesta1) && respuestasCorrectas.includes(respuesta2) && respuestasCorrectas.includes(respuesta3) && respuestasCorrectas.includes(respuesta4) && respuestasCorrectas.includes(respuesta5)) {
         document.getElementById("respuestas-correctas").style.display = "block";
-        document.getElementById("imagen").src = "img/lobo.jpeg"; // Aquí debes colocar la URL de tu imagen
+        document.getElementById("imagen").src = "img/winnie.jpeg"; // Aquí debes colocar la URL de tu imagen
       } else {
         alert("Inténtalo de nuevo.");
       }
