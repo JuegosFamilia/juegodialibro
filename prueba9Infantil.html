@@ -4,25 +4,36 @@
       <title>Prueba 9 Infantil</title>
       <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
       <script type="text/javascript" src="prueba9Infantil.js"></script>
-     
-    </script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>PRUEBA 9</h1>
-    <form>
+    <div class="title">
+      <h1>Prueba 9</h1>
+      </div>
+      <div class="abs-center">
+      <form>
+      <div class="form-control">
       <label for="texto">¿Cómo brilla la alegría en el libro El monstruo de colores?</label>
       <br/>
-      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="4"><label>  4 letras</label><br><br>
-      <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="2"><label>  2 letras</label><br><br>
-      <input type="text" id="respuesta3" name="respuesta3" value="" maxlength="3"><label>  3 letras</label><br><br>
+      <p>Pista:</p>
+      <p>Como el … (la estrella que nos da la luz durante el día).</p>
+
+      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="4"><label>&nbsp;&nbsp;&nbsp;&nbsp;4 letras</label><br><br>
+      <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="2"><label>&nbsp;&nbsp;&nbsp;&nbsp;2 letras</label><br><br>
+      <input type="text" id="respuesta3" name="respuesta3" value="" maxlength="3"><label>&nbsp;&nbsp;&nbsp;&nbsp;3 letras</label><br><br>
       
-      <button type="button" onclick="verificarRespuestas()">Verificar </button>
+      <button class="btn btn-info" type="button" onclick="verificarRespuestas()">Verificar </button>
     </form>
+    <div class="abs-center">
       <div id="respuestas-correctas" style="display: none;">
+        <br/>
       <h4>¡Te felicito! La letra que estás buscando es la: C</h4>
       <img id="imagen" src="img/monstruo.jpeg" alt="Monstruo">
       </div>
-
+</div>  
     
   </body>
 </html>

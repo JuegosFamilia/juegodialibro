@@ -4,22 +4,34 @@
       <title>Prueba 5 Infantil</title>
       <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
       <script type="text/javascript" src="prueba5Infantil.js"></script>
-     
-    </script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>PRUEBA 5</h1>
-    <form>
-      <label for="texto">¿Cómo se llama la protagonista del libro Orejas de mariposa?</label>
+    <div class="title">
+    <h1>Prueba 5</h1>
+  </div>
+</div>
+<div class="abs-center">
+<form>
+<div class="form-control">
+      <label for="texto">ORDENA LAS LETRAS</label>
+      <p> ¿Cómo se llama la protagonista del libro Orejas de mariposa?</p>  
+      <p>R A A M</p>
       <br/>
-      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="4"><label>  4 letras</label><br><br>
+      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="4"><label>&nbsp;&nbsp;&nbsp;&nbsp;4 letras</label><br><br>
       
-      <button type="button" onclick="verificarRespuestas()">Verificar </button>
+      <button class="btn btn-info" type="button" onclick="verificarRespuestas()">Verificar </button>
     </form>
+    <div class="abs-center">
       <div id="respuestas-correctas" style="display: none;">
+        <br/>
       <h4>¡Te felicito! La letra que estás buscando es la: I</h4>
       <img id="imagen" src="img/orejas.jpeg" alt="Orejas">
       </div>
+      </div>  
 
     
   </body>

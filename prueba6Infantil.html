@@ -4,34 +4,39 @@
       <title>Prueba 6 Infantil</title>
       <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
       <script type="text/javascript" src="prueba6Infantil.js"></script>
-     
-    </script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>PRUEBA 6</h1>
+    <div class="title">
+    <h1>Prueba 6</h1>
+    </div>
+    <div class="abs-center">
+      <img src="img/inf_6.jpg" alt="Imagen prueba 1">
+      </div>
+    <div class="abs-center">
     <form>
+    <div class="form-control">
       <label for="texto">¿Cuáles son los ingredientes necesarios para cocinar un <b>LOBO</b> según el libro Comer un lobo?</label>
       <br/>
       <p>Cinco palabras:</p>
       <br/>
-      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="9"><label>  9 letras</label><br><br>
-      <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="3"><label>  3 letras</label><br><br>
-      <input type="text" id="respuesta3" name="respuesta3" value="" maxlength="6"><label>  6 letras</label><br><br>
-      <input type="text" id="respuesta4" name="respuesta4" value="" maxlength="4"><label>  4 letras</label><br><br>
-      <input type="text" id="respuesta5" name="respuesta5" value="" maxlength="4"><label>  4 letras</label><br><br>
-      <button type="button" onclick="verificarRespuestas()">Verificar </button>
+      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="9"><label>&nbsp;&nbsp;&nbsp;&nbsp;9 letras</label><br><br>
+      <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="3"><label>&nbsp;&nbsp;&nbsp;&nbsp;3 letras</label><br><br>
+      <input type="text" id="respuesta3" name="respuesta3" value="" maxlength="6"><label>&nbsp;&nbsp;&nbsp;&nbsp;6 letras</label><br><br>
+      <input type="text" id="respuesta4" name="respuesta4" value="" maxlength="4"><label>&nbsp;&nbsp;&nbsp;&nbsp;4 letras</label><br><br>
+      <input type="text" id="respuesta5" name="respuesta5" value="" maxlength="4"><label>&nbsp;&nbsp;&nbsp;&nbsp;4 letras</label><br><br>
+      <button class="btn btn-info" type="button" onclick="verificarRespuestas()">Verificar </button>
     </form>
+    <div class="abs-center">
       <div id="respuestas-correctas" style="display: none;">
+        <br/>
       <h4>¡Te felicito! La letra que estás buscando es la: O</h4>
       <img id="imagen" src="img/lobo.jpeg" alt="Luna">
       </div>
-
-      <button type="button" onclick="pistas()">Pistas </button>
-      <div id="pistasimagenes" style="display: none;">
-        <img src="img/zanahoria.jpeg">
-        <img src="img/puerro.jpeg">
-        <img src="img/sal.jpeg">
-        <img src="img/agua.jpeg">
       </div>
+     
   </body>
 </html>

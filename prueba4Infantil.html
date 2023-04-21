@@ -4,30 +4,40 @@
       <title>Prueba 4 Infantil</title>
       <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
       <script type="text/javascript" src="prueba4Infantil.js"></script>
-     
-    </script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>PRUEBA 4</h1>
+    <div class="title">
+    <h1>Prueba 4</h1>
+  </div>
+  <div class="abs-center">
     <form>
+    <div class="form-control">
       <label for="texto">¿Por qué llama a la puerta de casa del lobo la ovejita en el cuento La ovejita que vino a cenar?</label>
       <br/>
       <p>Cuatros palabras:</p>
       <br/>
       <p>ORDENA LAS PALABRAS PARA DAR CON LA FRASE CORRECTA</p>
       <p>FRÍO ESTABA DE HELADA</p>
-      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="6"><label>  6 letras</label><br><br>
-      <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="6"><label>  6 letras</label><br><br>
-      <input type="text" id="respuesta3" name="respuesta3" value="" maxlength="2"><label>  2 letras</label><br><br>
-      <input type="text" id="respuesta4" name="respuesta4" value="" maxlength="4"><label>  4 letras</label><br><br>
+      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="6"><label>&nbsp;&nbsp;&nbsp;&nbsp;6 letras</label><br><br>
+      <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="6"><label>&nbsp;&nbsp;&nbsp;&nbsp;6 letras</label><br><br>
+      <input type="text" id="respuesta3" name="respuesta3" value="" maxlength="2"><label>&nbsp;&nbsp;&nbsp;&nbsp;2 letras</label><br><br>
+      <input type="text" id="respuesta4" name="respuesta4" value="" maxlength="4"><label>&nbsp;&nbsp;&nbsp;&nbsp;4 letras</label><br><br>
       
-      <button type="button" onclick="verificarRespuestas()">Verificar </button>
+      <button class="btn btn-info" type="button" onclick="verificarRespuestas()">Verificar </button>
     </form>
+  </div>
+</div>
+  <div class="abs-center">
       <div id="respuestas-correctas" style="display: none;">
+        <br/>
       <h4>¡Te felicito! La letra que estás buscando es la: B</h4>
       <img id="imagen" src="img/ovejita.jpeg" alt="Luna">
       </div>
-
+º   </div>
     
   </body>
 </html>

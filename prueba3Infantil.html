@@ -4,26 +4,34 @@
       <title>Prueba 3 Infantil</title>
       <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
       <script type="text/javascript" src="prueba3Infantil.js"></script>
-     
-    </script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>PRUEBA 3</h1>
+    <div class="title">
+    <h1>Prueba 3</h1>
+    </div>
+    <div class="abs-center">
     <form>
+    <div class="form-control">
       <label for="texto">¿Cuántos animales ayudan al ratón en el libro A qué sabe la luna?</label>
       <br/>
       <p><b>Pista:</b> TENGO DIEZ CARAMELOS Y EL MISMO NÚMERO DE AMIGAS QUE EL NÚMERO DE ESTE COMERCIO</p>
       <p>¿CUANTOS CARAMELOS ME QUEDARÁN SI QUIERO REGALAR UN CARAMELO A CADA AMIGA?</p>
       <br/>
-      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="1"><label>  Es un número</label><br><br>
+      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="1">&nbsp;&nbsp;&nbsp;&nbsp;Es un número</label><br><br>
       
-      <button type="button" onclick="verificarRespuestas()">Verificar </button>
+      <button class="btn btn-info" type="button" onclick="verificarRespuestas()">Verificar </button>
     </form>
+    <div class="abs-center"></div>
       <div id="respuestas-correctas" style="display: none;">
+        <br/>
       <h4>¡Te felicito! La letra que estás buscando es la: B</h4>
       <img id="imagen" src="img/luna.jpeg" alt="Luna">
       </div>
-
+      </div>
     
   </body>
 </html>
