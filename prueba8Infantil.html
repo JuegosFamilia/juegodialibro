@@ -4,25 +4,34 @@
       <title>Prueba 8 Infantil</title>
       <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
       <script type="text/javascript" src="prueba8Infantil.js"></script>
-     
-    </script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>PRUEBA 8</h1>
+    <div class="title container">
+    <h1>Prueba  8</h1>
+    <div class="abs-center">
+      <img src="img/inf_8.jpg" alt="Imagen prueba 8">
+      </div>
+      <div class="abs-center">
+    <form>
+       <div class="form-control">
     <form>
       <label for="texto">¿Cómo es la caca de la vaca en el libro Puedo mirar tu pañal?</label>
       <br/>
-      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="4"><label>  4 letras</label><br><br>
-      <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="4"><label>  4 letras</label><br><br>
-      <input type="text" id="respuesta3" name="respuesta3" value="" maxlength="6"><label>  6 letras</label><br><br>
+      <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="4"><label>&nbsp;&nbsp;&nbsp;&nbsp;4 letras</label><br><br>
+      <input type="text" id="respuesta2" name="respuesta2" value="" maxlength="4"><label>&nbsp;&nbsp;&nbsp;&nbsp;4 letras</label><br><br>
+      <input type="text" id="respuesta3" name="respuesta3" value="" maxlength="6"><label>&nbsp;&nbsp;&nbsp;&nbsp;6 letras</label><br><br>
       
-      <button type="button" onclick="verificarRespuestas()">Verificar </button>
+      <button class="btn btn-info" type="button" onclick="verificarRespuestas()">Verificar </button>
     </form>
+    <div class="abs-center">
       <div id="respuestas-correctas" style="display: none;">
-      <h4>¡Te felicito! La letra que estás buscando es la: O</h4>
+        <br/>
+      <h4>¡Te felicito! La letra que estás buscando es la: E</h4>
       <img id="imagen" src="img/pañal.jpeg" alt="Pañal">
       </div>
-
-    
   </body>
 </html>
