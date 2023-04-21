@@ -4,23 +4,26 @@
       <title>Prueba 7 Infantil</title>
       <link rel="stylesheet" type="text/css" media="screen" href="styles/general.css"/>
       <script type="text/javascript" src="prueba7Infantil.js"></script>
-     
-    </script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>PRUEBA 7</h1>
+    <div class="title">
+    <h1>Prueba 7</h1>
+    </div>
     <form>
       <label for="texto">Qué instrumento utiliza el saltamontes en el libro Las jirafas no pueden bailar, para que Chufa baile?</label>
       <br/>
+      <p>Con tan sólo cuatro cuerdas, que un arco pone en acción, esta caja melodiosa te alegrará el corazón.</p>
       <input type="text" id="respuesta1" name="respuesta1" value="" maxlength="6"><label>  6 letras</label><br><br>
       
-      <button type="button" onclick="verificarRespuestas()">Verificar </button>
+      <button class="btn-btn-info" type="button" onclick="verificarRespuestas()">Verificar </button>
     </form>
       <div id="respuestas-correctas" style="display: none;">
       <h4>¡Te felicito! La letra que estás buscando es la: L</h4>
       <img id="imagen" src="img/jirafa.jpeg" alt="Jirafa">
       </div>
-
-    
   </body>
 </html>
